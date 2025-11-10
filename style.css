@@ -143,32 +143,104 @@ Nav {
     Transform: scale(1.15) rotate(-7deg);
 }
 
-.btn {
-    Display: inline-block;
-    Color: #fff;
-    Background: linear-gradient(90deg, #325adf, #e7530f);
-    Padding: 12px 28px;
-    Border-radius: 2rem;
-    Text-decoration: none;
-    Font-size: 1rem;
-    Font-weight: 600;
-    Margin-top: 15px;
-    Box-shadow: 0 2px 9px rgba(50,90,223,0.07);
-    Transition: background 0.25s, transform 0.18s;
-}
-.btn:hover {
-    Background: linear-gradient(90deg, #e7530f, #325adf);
-    Transform: translateY(-2px) scale(1.03);
+.experience-item {
+    background: #f8faff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
-Footer {
-    Background: #325adf;
-    Color: #fff;
-    Text-align: center;
-    Padding: 1.3rem 0;
-    Font-size: 1rem;
-    Border-top: 4px solid #e7530f;
-    Margin-top: 2.5rem;
+.experience-item h3 {
+    color: #325adf;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 500;
+    color: #e7530f;
+}
+
+.duration {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul {
+    padding-left: 1.2rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: #f8faff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #325adf;
+    margin-bottom: 0.8rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background: #325adf;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-small:hover {
+    background: #e7530f;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: #f8faff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #325adf;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    background: #325adf;
+    color: white;
 }
 
 /* Responsive Styles */
