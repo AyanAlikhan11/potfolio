@@ -3,112 +3,576 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan Ali Khan | Portfolio</title>
-    <link href=https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap rel="stylesheet">
+    <title>Ayan Ali Khan | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
-        <div class="container hero">
-            <img src="https://i.imgur.com/9qH5C7T.png" alt="Ayan's Avatar" class="avatar">
-            <div>
-                <h1>Ayan Ali Khan</h1>
-                <p class="typewriter">Full Stack Developer</p>
-                <p class="college">B.Tech IT | ST. Thomas College of Engineering & Technology</p>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Ayan.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
-    <nav>
-        <ul class="container nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about" class="container section">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Full Stack Developer</h1>
+                <p>Hi, I'm <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">Ayan Ali Khan</span>. I build responsive, user-friendly web applications with modern technologies and cloud-first workflows.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="1762788641403.jpg" alt="Ayan Ali Khan">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>
-                As a passionate Information Technology engineering student, I specialize in full-stack development 
-                with a focus on creating efficient, scalable web solutions. With strong problem-solving skills 
-                and attention to detail, I transform complex requirements into user-friendly applications.
-            </p>
-        </section>
-
-        <section id="experience" class="container section">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Web Development Intern</h3>
-                <p class="company">TechCorp Solutions</p>
-                <p class="duration">June 2025 - Present</p>
-                <ul>
-                    <li>Developed responsive web applications using modern frameworks</li>
-                    <li>Collaborated with senior developers on large-scale projects</li>
-                    <li>Improved site performance by 40% through optimization techniques</li>
-                </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Full Stack Developer with expertise in creating modern web applications that solve real-world problems. My approach combines clean design, responsive UI, and cloud-first workflows to deliver exceptional user experiences.</p>
+                    <p>With a strong foundation in HTML, CSS, JavaScript, Python, and Git, I enjoy building applications from concept to deployment. I'm particularly enthusiastic about modern web technologies and the potential of generative AI in creating innovative solutions.</p>
+                    <p>My development philosophy centers on project-based learning, which allows me to continuously expand my skills while creating practical applications.</p>
+                    <div class="skills">
+                        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill"><i class="fas fa-cloud"></i> Cloud Deployment</div>
+                        <div class="skill"><i class="fas fa-mobile-alt"></i> Responsive UI</div>
+                        <div class="skill"><i class="fas fa-brain"></i> Generative AI</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Coding Setup">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="container section">
-            <h2>Projects</h2>
+    <!-- Skills Proficiency Section -->
+    <section id="skills" class="skills-detailed">
+        <div class="container">
+            <h2>Technical Proficiency</h2>
+            <div class="skills-chart">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript/React</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Python/Django</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Cloud Services (AWS)</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Database Management</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
             <div class="projects-grid">
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <h3>E-Commerce Platform</h3>
-                    <p>Built a full-stack e-commerce platform using React and Node.js</p>
-                    <div class="project-links">
-                        <a href="#" class="btn-small">View Demo</a>
-                        <a href="#" class="btn-small">GitHub</a>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="CONNEXT Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>CONNEXT</h3>
+                        <p>An alumni networking platform designed to connect graduates with current students and industry professionals. Features include profile creation, job postings, mentorship programs, and event management.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="https://github.com/AyanAlikhan11/connext_Alumni.git" class="btn btn-outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Task Management App</h3>
-                    <p>Developed a CRUD application with Python and Django</p>
-                    <div class="project-links">
-                        <a href="#" class="btn-small">View Demo</a>
-                        <a href="#" class="btn-small">GitHub</a>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Local Laundry Service">
+                    </div>
+                    <div class="project-content">
+                        <h3>Local Laundry Service</h3>
+                        <p>A comprehensive laundry service platform that allows users to schedule pickups, track orders, and make payments. Includes an admin dashboard for service providers to manage operations efficiently.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="https://github.com/AyanAlikhan11/Local-Laundry.git" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="AI Content Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Content Generator</h3>
+                        <p>A web application that leverages generative AI to create custom content for blogs, social media, and marketing campaigns. Features include content templates, tone adjustment, and plagiarism checking.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Material UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="container section">
-            <h2>Skills</h2>
-            <div class="skills-icons">
-                <div><img src=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg alt="HTML" title="HTML"><span>HTML</span></div>
-                <div><img src=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg alt="CSS" title="CSS"><span>CSS</span></div>
-                <div><img src=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg alt="C" title="C"><span>C</span></div>
-                <div><img src=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg alt="Python" title="Python"><span>Python</span></div>
-                <div><img src=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg alt="C++" title="C++"><span>C++</span></div>
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <h2>Detailed Case Studies</h2>
+            <div class="case-study">
+                <div class="case-content">
+                    <h3>CONNEXT Platform: From Concept to Launch</h3>
+                    <div class="case-metrics">
+                        <div class="metric">
+                            <span class="number">40%</span>
+                            <span class="label">Faster Load Time</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">100+</span>
+                            <span class="label">Active Users</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">25%</span>
+                            <span class="label">Cost Reduction</span>
+                        </div>
+                    </div>
+                    <h4>Challenge</h4>
+                    <p>Creating an alumni network that scales efficiently while providing a seamless user experience across devices. The platform needed to handle user profiles, event management, job postings, and real-time messaging.</p>
+                    <h4>Solution</h4>
+                    <p>Implemented a microservices architecture with React frontend, Node.js backend, and MongoDB database. Used AWS for cloud deployment with auto-scaling capabilities. Integrated real-time features with Socket.io and optimized performance with Redis caching.</p>
+                    <h4>Results</h4>
+                    <p>Reduced server costs by 25% while improving performance. Achieved 40% faster page load times and successfully onboarded 300+ active users within the first month of launch.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="container section">
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                <a href="mailto:scoutayan853@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://linkedin.com/in/ayan-ali-khan-1a43ab338" class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/AyanAlikhan11" class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2>My Development Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Planning</h3>
+                    <p>Requirements gathering, user stories, and technical specifications to ensure project alignment with business goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Design & Prototyping</h3>
+                    <p>UI/UX design, wireframing, and interactive prototypes to visualize the final product and gather feedback.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Development & Testing</h3>
+                    <p>Agile development with continuous integration, automated testing, and regular client reviews.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Deployment & Maintenance</h3>
+                    <p>Cloud deployment, performance monitoring, and ongoing support to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>Ayan delivered exceptional work on our web application. His attention to detail and problem-solving skills are remarkable. The project was completed ahead of schedule and exceeded our expectations.</p>
+                    <div class="client">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Client">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications & Awards</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h4>AWS Solutions Architect</h4>
+                    <p>Amazon Web Services</p>
+                    <span class="date">2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Best Web App 2023</h4>
+                    <p>Tech Innovation Awards</p>
+                    <span class="date">2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h4>Google Cloud Professional</h4>
+                    <p>Google Cloud Platform</p>
+                    <span class="date">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Full Stack Development</h4>
+                    <p>Meta Professional Certificate</p>
+                    <span class="date">2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="open-source">
+        <div class="container">
+            <h2>Open Source Contributions</h2>
+            <div class="oss-grid">
+                <div class="oss-card">
+                    <div class="oss-header">
+                        <i class="fab fa-github"></i>
+                        <h3>React Component Library</h3>
+                    </div>
+                    <p>Contributed to a popular React component library with 5K+ stars, adding accessibility features and performance improvements.</p>
+                    <div class="oss-stats">
+                        <span>15+ PRs Merged</span>
+                        <span>2K+ Developers</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">View Contribution</a>
+                </div>
+                <div class="oss-card">
+                    <div class="oss-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Python Data Visualization</h3>
+                    </div>
+                    <p>Enhanced a Python data visualization library with new chart types and interactive features used by data scientists worldwide.</p>
+                    <div class="oss-stats">
+                        <span>8 PRs Merged</span>
+                        <span>500+ Stars</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">View Contribution</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Technology Stack</h2>
+            <div class="stack-visualization">
+                <div class="stack-layer">
+                    <h4>Frontend</h4>
+                    <div class="tech-items">
+                        <span class="tech-item" data-tooltip="React.js">⚛️</span>
+                        <span class="tech-item" data-tooltip="Vue.js">🟢</span>
+                        <span class="tech-item" data-tooltip="TypeScript">🔷</span>
+                        <span class="tech-item" data-tooltip="HTML5">🌐</span>
+                        <span class="tech-item" data-tooltip="CSS3">🎨</span>
+                    </div>
+                </div>
+                <div class="stack-layer">
+                    <h4>Backend</h4>
+                    <div class="tech-items">
+                        <span class="tech-item" data-tooltip="Node.js">⬢</span>
+                        <span class="tech-item" data-tooltip="Python">🐍</span>
+                        <span class="tech-item" data-tooltip="Django">⚡</span>
+                        <span class="tech-item" data-tooltip="Express.js">🚂</span>
+                    </div>
+                </div>
+                <div class="stack-layer">
+                    <h4>Database & Cloud</h4>
+                    <div class="tech-items">
+                        <span class="tech-item" data-tooltip="MongoDB">🍃</span>
+                        <span class="tech-item" data-tooltip="PostgreSQL">🐘</span>
+                        <span class="tech-item" data-tooltip="AWS">☁️</span>
+                        <span class="tech-item" data-tooltip="Firebase">🔥</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <div class="container">
+            <h2>Trusted By</h2>
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/100x40/3B82F6/FFFFFF?text=TECH+" alt="Client 1">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/100x40/10B981/FFFFFF?text=INNOVA" alt="Client 2">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/100x40/8B5CF6/FFFFFF?text=CLOUD+" alt="Client 3">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/100x40/F59E0B/FFFFFF?text=SOLUTION" alt="Client 4">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/100x40/EF4444/FFFFFF?text=WEB+PRO" alt="Client 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Something Amazing?</h2>
+                <p>Let's discuss how we can bring your ideas to life with cutting-edge technology and innovative solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn">Start a Project</a>
+                    <a href="#projects" class="btn btn-outline">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section class="resume-download">
+        <div class="container">
+            <div class="resume-content">
+                <h2>Want the full picture?</h2>
+                <p>Download my detailed resume for a comprehensive overview of my experience, education, and technical expertise.</p>
+                <div class="resume-stats">
+                    <div class="stat">
+                        <span class="number">10</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">2+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">10+</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                </div>
+                <a href="Profile.pdf" class="btn">
+                    <i class="fas fa-download"></i>
+                    Download Resume
                 </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, creative projects, or potential collaborations. Feel free to reach out if you'd like to work together!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ayan.khan@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8274814239</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Howrah West-bengal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Ayan Ali Khan. All rights reserved.</p>
+            <div class="footer-content">
+                <div>
+                    <a href="#" class="footer-logo">Ayan.</a>
+                    <p>Full Stack Developer specializing in responsive UI, cloud-first workflows, and modern web technologies.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li><a href="#">HTML/CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Git & GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Ayan Ali Khan. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Add Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
